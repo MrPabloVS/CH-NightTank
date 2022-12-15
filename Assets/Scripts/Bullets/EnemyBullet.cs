@@ -31,6 +31,13 @@ public class EnemyBullet : Bullets
             Destroy(gameObject);
             
         }
+
+        if (other.gameObject.tag == "Wall")
+        {
+            
+            Destroy(gameObject);
+            
+        }
         
     }
 }
