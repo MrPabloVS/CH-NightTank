@@ -22,7 +22,6 @@ public class EnemyTurret : MonoBehaviour
 	
 	private void Shoot()
 	{
-		Debug.Log("The Cannon has been shoot!");
 
 		Instantiate(Bullet,salida.position,transform.rotation);
         cooldown = 5f;

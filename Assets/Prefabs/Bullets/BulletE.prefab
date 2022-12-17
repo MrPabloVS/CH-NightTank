@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8717208187110884345}
   - component: {fileID: 8717208187110884350}
   - component: {fileID: 7159109239404097622}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BulletE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77,7 +77,7 @@ GameObject:
   - component: {fileID: 8717208187233309477}
   - component: {fileID: 8717208187233309482}
   - component: {fileID: 8717208187233309483}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,7 +170,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8717208187771109856}
   - component: {fileID: 8717208187771109859}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -24,7 +24,7 @@ public class EnemyBullet : Bullets
     }
 
     private void OnCollisionEnter(Collision other) {
-       
+       Debug.Log(other.gameObject.tag);
         if (other.gameObject.tag == "Player")
         {
             

@@ -32,7 +32,7 @@ public class BoobyTrap : MonoBehaviour
         if (Physics.Raycast(salida.transform.position, direction, out hit, Mathf.Infinity, layerToCollide) && isActive)
         {
             Debug.DrawRay(salida.transform.position, direction * hit.distance, Color.yellow);
-            //Debug.Log(hit.collider);
+            Debug.Log("Hit");
             isActive = false;
             didHit = true;
         }

@@ -18,13 +18,13 @@ public class EventManager : MonoBehaviour
         onWinHandler();
         onBoobyHitHandler();
         onShootHandler();
-        onStartHandler();
+       // onStartHandler();
     }
     
 
     public void onDeathHandler() 
     {
-        if (Player.isDeath)
+        if (Input.GetKeyDown(KeyCode.M))
         {
             Debug.Log("You have died");
             onDeath.Invoke();
@@ -55,7 +55,7 @@ public class EventManager : MonoBehaviour
         if (BoobyTrap.didHit)
         {
             onBoobyHit.Invoke();
-            Debug.Log("Invocando BoobyHit");
+           // Debug.Log("Invocando BoobyHit");
         }
     }
 
@@ -68,12 +68,13 @@ public class EventManager : MonoBehaviour
         }
     }
 
-    public void onStartHandler()
+   /*  public void onStartHandler()
     {
         if (StartLine.startTimer)
         {
             onStart.Invoke();
             Debug.Log("invocar onStart");
+            StartLine.startTimer = false; 
         }
-    }
+    } */
 }

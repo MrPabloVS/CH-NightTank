@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1055165914645965904}
   - component: {fileID: 1055165914645965871}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +104,7 @@ GameObject:
   - component: {fileID: 1055165915579205710}
   - component: {fileID: 1055165915579205711}
   - component: {fileID: 352549414773235772}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BulletS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,7 +170,7 @@ GameObject:
   - component: {fileID: 1055165916042903895}
   - component: {fileID: 1055165916042903896}
   - component: {fileID: 1055165916042903897}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
