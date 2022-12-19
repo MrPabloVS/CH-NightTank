@@ -18,7 +18,7 @@ public class StartLine : MonoBehaviour
     void Update()
     {
         Raycast();
-       //updateTimer();
+        updateTimer();
     }
 
     private void Raycast()
