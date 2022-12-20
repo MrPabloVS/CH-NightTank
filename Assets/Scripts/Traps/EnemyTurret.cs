@@ -28,4 +28,13 @@ public class EnemyTurret : MonoBehaviour
 
 	}
 
+    void OnCollisionEnter(Collision other)
+    {
+        Debug.Log("Torreta:" + other.gameObject.tag);
+        if (other.gameObject.tag == "Bullet")
+        {
+            Destroy(gameObject);
+        }
+    }
+
 }

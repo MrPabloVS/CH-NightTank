@@ -2,6 +2,8 @@ using System.Numerics;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+
 
 public class BoobyTrap : MonoBehaviour
 {
@@ -11,6 +13,8 @@ public class BoobyTrap : MonoBehaviour
     public GameObject salida;
     public static bool didHit = false;
     private bool isActive = true;
+
+    [SerializeField] public UnityEvent onHit;
 
    
 
@@ -35,6 +39,7 @@ public class BoobyTrap : MonoBehaviour
             Debug.Log("Hit");
             isActive = false;
             didHit = true;
+            OnHitHandler();
         }
         else
         {
@@ -43,6 +48,11 @@ public class BoobyTrap : MonoBehaviour
         }
     
 
+    }
+
+    void OnHitHandler() 
+    {
+        onHit.Invoke();
     }
 
 

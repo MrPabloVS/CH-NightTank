@@ -15,7 +15,6 @@ public class EventManager : MonoBehaviour
     private void Update() {
         onEscHandler();
         onDeathHandler();
-        onWinHandler();
         onBoobyHitHandler();
         onShootHandler();
        // onStartHandler();
@@ -41,14 +40,8 @@ public class EventManager : MonoBehaviour
         }
     }
 
-    public void onWinHandler()
-    {
-        if (Player.finished)
-        {
-            onWin.Invoke();
-            Debug.Log("Invocando victoria");
-        }
-    }
+    
+    
 
     public void onBoobyHitHandler()
     {
