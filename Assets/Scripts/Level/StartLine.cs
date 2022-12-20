@@ -21,6 +21,12 @@ public class StartLine : MonoBehaviour
         updateTimer();
     }
 
+    void Start()
+    {
+        timer = 0f;
+        isActive = true;
+    }
+
     private void Raycast()
     { 
 

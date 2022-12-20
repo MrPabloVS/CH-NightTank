@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
+
 
 
 public class FinishLine : MonoBehaviour
@@ -9,16 +11,9 @@ public class FinishLine : MonoBehaviour
 
     [SerializeField] public UnityEvent onFinish;
 
-    // Start is called before the first frame update
-    void Start()
+    public static void ChangeScene()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        SceneManager.LoadScene(0);
     }
 
     void OnTriggerEnter(Collider other)

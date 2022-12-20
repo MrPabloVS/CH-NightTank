@@ -39,7 +39,7 @@ public class Cannons : MonoBehaviour
         Instantiate(BulletS,salidaS.position,transform.rotation);
         Instantiate(BulletW,salidaW.position,transform.rotation);
         Instantiate(BulletE,salidaE.position,transform.rotation);
-        cooldown = 5f;
+        cooldown = 3f;
 
 	}
 

@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     public Rigidbody rb;
     //public int speed = 1000;
     public static bool finished = false;
-    public float hoverForce = 10.0f;
+    public float hoverForce = 4.0f;
     [SerializeField] public UnityEvent onFinish;
 
     void Start()
